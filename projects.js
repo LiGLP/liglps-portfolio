@@ -5,8 +5,7 @@ const projects = [
     "description": "The world's first fully automated dropshipping platform. AI selects products, builds your store, and runs your ads 24/7.",
     "tags": ["E-Commerce", "Dropshipping", "Full Stack"],
     "links": [
-      { "label": "Who Are We", "url": "https://vibe-ecom.pages.dev/whoarewe/", "icon": "fa-solid fa-users" },
-      { "label": "Visit Vibe", "url": "https://vibe-ecom.pages.dev/", "icon": "fa-solid fa-arrow-up-right-from-square" }
+      { "label": "Visit Vibe", "url": "https://vibe-dropshipping.com/", "icon": "fa-solid fa-arrow-up-right-from-square" }
     ]
   },
   {
