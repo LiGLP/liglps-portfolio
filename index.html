@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>liglp — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="logo">
+        liglp<span class="logo-dot">.de</span>
+    </a>
+    <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="mailto:liglpbusiness@gmail.com" class="nav-cta">
+            <i class="fa-solid fa-envelope"></i> Contact
+        </a>
+    </div>
+</nav>
+
+<main class="page-wrap">
+
+    <section class="hero-section">
+        <div class="hero-eyebrow">
+            <span></span>
+            Full Stack Developer
+        </div>
+        <div class="hero-grid">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Building things<br>
+                    that <span class="accent">actually work.</span>
+                </h1>
+                <p class="hero-sub">
+                    I'm liglp — a full-stack developer turning ideas into polished digital products. I write Java, Python, HTML, CSS, JavaScript and a bit of C++.
+                </p>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
+                    <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+                    <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+                    <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                    <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                    <span class="skill-tag"><i class="fa-solid fa-code"></i> C++</span>
+                </div>
+            </div>
+            <div class="hero-avatar-wrap">
+                <div class="hero-avatar">
+                    <img src="https://liglp.de/liglp.gif" alt="liglp" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="avatar-placeholder" style="display:none; align-items:center; justify-content:center; width:100%; height:100%; font-size:3rem; color:rgba(224,82,82,0.3);"><i class="fa-solid fa-user"></i></div>
+                </div>
+                <div class="hero-av-badge">
+                    <i class="fa-solid fa-terminal"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="section-title-row">
+            <div class="section-label">About me</div>
+            <div class="section-line"></div>
+        </div>
+        <div class="about-card">
+            <div class="about-text">
+                <p>
+                    I'm a full-stack developer with a passion for building clean, fast, and scalable digital products.
+                    From front-end interfaces to back-end systems — I architect the tech that makes things work.
+                </p>
+            </div>
+            <div class="about-links">
+                <a href="https://github.com/liglp" target="_blank" rel="noopener" class="social-link">
+                    <div class="link-icon icon-github"><i class="fa-brands fa-github"></i></div>
+                    <div class="link-text-wrap">
+                        <span class="link-label">GitHub</span>
+                        <span class="link-value">github.com/liglp</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right link-arrow"></i>
+                </a>
+                <a href="https://www.instagram.com/liglp_ks" target="_blank" rel="noopener" class="social-link">
+                    <div class="link-icon icon-insta"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="link-text-wrap">
+                        <span class="link-label">Instagram</span>
+                        <span class="link-value">@liglp_ks</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right link-arrow"></i>
+                </a>
+                <a href="https://discord.com/users/1175399521191215105" target="_blank" rel="noopener" class="social-link">
+                    <div class="link-icon icon-discord"><i class="fa-brands fa-discord"></i></div>
+                    <div class="link-text-wrap">
+                        <span class="link-label">Discord</span>
+                        <span class="link-value">liglp</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right link-arrow"></i>
+                </a>
+                <a href="mailto:liglpbusiness@gmail.com" class="social-link">
+                    <div class="link-icon icon-mail"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="link-text-wrap">
+                        <span class="link-label">Email</span>
+                        <span class="link-value">liglpbusiness@gmail.com</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right link-arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <div class="section-title-row">
+            <div class="section-label">Projects</div>
+            <div class="section-line"></div>
+        </div>
+        <div class="projects-grid" id="projects-grid"></div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="footer-bar">
+            <a href="mailto:liglpbusiness@gmail.com" class="footer-mail">
+                <i class="fa-solid fa-envelope"></i>
+                liglpbusiness@gmail.com
+            </a>
+            <div class="footer-copy">&copy; 2026 liglp</div>
+        </div>
+    </footer>
+
+</main>
+
+<script src="projects.js"></script>
+
+</body>
+</html>
