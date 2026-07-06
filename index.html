@@ -1,137 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>liglp — Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>liglp</title>
+<link id="favicon" rel="icon" type="image/png" href="https://cdn.discordapp.com/embed/avatars/0.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav class="navbar">
-    <a href="index.html" class="logo">
-        liglp<span class="logo-dot">.de</span>
-    </a>
-    <div class="nav-links">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="mailto:liglpbusiness@gmail.com" class="nav-cta">
-            <i class="fa-solid fa-envelope"></i> Contact
-        </a>
-    </div>
-</nav>
+<div class="wrap">
 
-<main class="page-wrap">
+  <div class="col">
 
-    <section class="hero-section">
-        <div class="hero-eyebrow">
-            <span></span>
-            Full Stack Developer
+    <section class="panel profile">
+      <div class="banner" id="banner"></div>
+      <div class="avatar-wrap">
+        <img class="avatar" id="avatar" alt="avatar">
+        <img class="avatar-deco" id="avatarDeco" alt="" style="display:none">
+        <div class="presence-dot" id="pdot"></div>
+      </div>
+      <div class="profile-body">
+        <div class="name-row">
+          <div class="uname" id="displayName">—</div>
+          <div class="badges" id="badges"></div>
         </div>
-        <div class="hero-grid">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Building things<br>
-                    that <span class="accent">actually work.</span>
-                </h1>
-                <p class="hero-sub">
-                    I'm liglp — a full-stack developer turning ideas into polished digital products. I write Java, Python, HTML, CSS, JavaScript and a bit of C++.
-                </p>
-                <div class="skill-tags">
-                    <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
-                    <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
-                    <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML</span>
-                    <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-                    <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
-                    <span class="skill-tag"><i class="fa-solid fa-code"></i> C++</span>
-                </div>
-            </div>
-            <div class="hero-avatar-wrap">
-                <div class="hero-avatar">
-                    <img src="https://liglp.de/liglp.gif" alt="liglp" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                    <div class="avatar-placeholder" style="display:none; align-items:center; justify-content:center; width:100%; height:100%; font-size:3rem; color:rgba(224,82,82,0.3);"><i class="fa-solid fa-user"></i></div>
-                </div>
-                <div class="hero-av-badge">
-                    <i class="fa-solid fa-terminal"></i>
-                </div>
-            </div>
+        <div class="handle-row">
+          <span id="handle">@—</span>
         </div>
+      </div>
     </section>
 
-    <section class="about-section" id="about">
-        <div class="section-title-row">
-            <div class="section-label">About me</div>
-            <div class="section-line"></div>
-        </div>
-        <div class="about-card">
-            <div class="about-text">
-                <p>
-                    I'm a full-stack developer with a passion for building clean, fast, and scalable digital products.
-                    From front-end interfaces to back-end systems — I architect the tech that makes things work.
-                </p>
-            </div>
-            <div class="about-links">
-                <a href="https://github.com/liglp" target="_blank" rel="noopener" class="social-link">
-                    <div class="link-icon icon-github"><i class="fa-brands fa-github"></i></div>
-                    <div class="link-text-wrap">
-                        <span class="link-label">GitHub</span>
-                        <span class="link-value">github.com/liglp</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right link-arrow"></i>
-                </a>
-                <a href="https://www.instagram.com/liglp_ks" target="_blank" rel="noopener" class="social-link">
-                    <div class="link-icon icon-insta"><i class="fa-brands fa-instagram"></i></div>
-                    <div class="link-text-wrap">
-                        <span class="link-label">Instagram</span>
-                        <span class="link-value">@liglp_ks</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right link-arrow"></i>
-                </a>
-                <a href="https://discord.com/users/1175399521191215105" target="_blank" rel="noopener" class="social-link">
-                    <div class="link-icon icon-discord"><i class="fa-brands fa-discord"></i></div>
-                    <div class="link-text-wrap">
-                        <span class="link-label">Discord</span>
-                        <span class="link-value">liglp</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right link-arrow"></i>
-                </a>
-                <a href="mailto:liglpbusiness@gmail.com" class="social-link">
-                    <div class="link-icon icon-mail"><i class="fa-solid fa-envelope"></i></div>
-                    <div class="link-text-wrap">
-                        <span class="link-label">Email</span>
-                        <span class="link-value">liglpbusiness@gmail.com</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right link-arrow"></i>
-                </a>
-            </div>
-        </div>
+    <section class="panel about">
+      <h2>About Me</h2>
+      <div class="socials" id="socials"></div>
+      <h4 id="bioHeading">Hi, I'm <span id="bioName">—</span></h4>
+      <p id="bioText" class="empty">—</p>
+      <div class="hr"></div>
+      <h4>My Techstack</h4>
+      <div class="stack" id="stack"></div>
     </section>
 
-    <section class="projects-section" id="projects">
-        <div class="section-title-row">
-            <div class="section-label">Projects</div>
-            <div class="section-line"></div>
+  </div>
+
+  <div class="col">
+
+    <section class="panel spotify hidden" id="spotifyCard">
+      <div class="sp-head">
+        <div class="sp-title"><span class="eq"><i></i><i></i><i></i><i></i></span>Listening to Spotify</div>
+        <div class="sp-icons">
+          <svg class="sp-logo" viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.52 17.34c-.24.36-.66.48-1.02.24-2.82-1.74-6.36-2.1-10.56-1.14-.42.12-.78-.18-.9-.54-.12-.42.18-.78.54-.9 4.56-1.02 8.52-.6 11.64 1.32.42.18.48.66.3 1.02zm1.44-3.3c-.3.42-.84.6-1.26.3-3.24-1.98-8.16-2.58-11.94-1.38-.48.12-1.02-.12-1.14-.6-.12-.48.12-1.02.6-1.14 4.38-1.32 9.78-.66 13.5 1.62.42.18.6.78.24 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.3c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.26-1.26 11.28-1.02 15.72 1.56.54.3.72 1.02.42 1.56-.3.42-1.02.66-1.56.36z"/></svg>
+          <span class="code" id="spCode"></span>
+          <svg viewBox="0 0 24 24" title="Lyrics"><path d="M12 3v10.55A4 4 0 1014 17V7h4V3h-6z"/></svg>
+          <svg viewBox="0 0 24 24" title="Open"><path d="M14 3v2h3.59l-9.3 9.29 1.42 1.42L19 6.41V10h2V3h-7zM5 5v14h14v-7h-2v5H7V7h5V5H5z"/></svg>
         </div>
-        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+      <div class="sp-body">
+        <img class="sp-art" id="spArt" alt="">
+        <div class="sp-info">
+          <div class="sp-song" id="spSong">—</div>
+          <div class="sp-artist" id="spArtist">—</div>
+          <div class="sp-album" id="spAlbum">—</div>
+          <div class="sp-bar-row">
+            <span id="spCur">0:00</span>
+            <div class="sp-bar"><span id="spProg"></span></div>
+            <span id="spTot">0:00</span>
+          </div>
+        </div>
+      </div>
+      <div class="watermark">
+        <svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.52 17.34c-.24.36-.66.48-1.02.24-2.82-1.74-6.36-2.1-10.56-1.14-.42.12-.78-.18-.9-.54-.12-.42.18-.78.54-.9 4.56-1.02 8.52-.6 11.64 1.32.42.18.48.66.3 1.02zm1.44-3.3c-.3.42-.84.6-1.26.3-3.24-1.98-8.16-2.58-11.94-1.38-.48.12-1.02-.12-1.14-.6-.12-.48.12-1.02.6-1.14 4.38-1.32 9.78-.66 13.5 1.62.42.18.6.78.24 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.3c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.26-1.26 11.28-1.02 15.72 1.56.54.3.72 1.02.42 1.56-.3.42-1.02.66-1.56.36z" fill="#1db954"/></svg>
+      </div>
     </section>
 
-    <footer class="footer-section">
-        <div class="footer-bar">
-            <a href="mailto:liglpbusiness@gmail.com" class="footer-mail">
-                <i class="fa-solid fa-envelope"></i>
-                liglpbusiness@gmail.com
-            </a>
-            <div class="footer-copy">&copy; 2026 liglp</div>
-        </div>
-    </footer>
+    <section class="panel projects">
+      <h2>Projects</h2>
+      <div class="proj-list" id="projList"></div>
+    </section>
 
-</main>
+  </div>
 
-<script src="projects.js"></script>
+</div>
 
+<div class="invite-overlay" id="inviteOverlay">
+  <div class="invite-card" id="inviteCard"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
